@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>opdracht 2</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="modal fade" id="main-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Bevestiging</h2>
+                    </div>
+                    <div class="modal-body">
+                        Weet u zeker dat u meer dan 1000 studenten wilt instellen?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="insertTableData()">Ja</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="emptyForms()">Nee</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-nav">
+                <div class="navbar-brand left-side-text">Vestiging &#9660;
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Den Haag</a></li>
+                        <li><a class="dropdown-item" href="#">Delft</a></li>
+                        <li><a class="dropdown-item" href="#">Zoetermeer</a></li>
+                      </ul>
+                </div>
+                <div class="navbar-brand right-side-text">Algemeen</div>
+                <div class="navbar-brand right-side-text">Video's</div>
+            </div>
+        </nav>
+        <div id="social-media">
+            <a href="https://twitter.com/dehaagse" target="_blank">
+                <i class="bi bi-twitter social-icon"></i>
+            </a>
+            <a href="https://www.instagram.com/dehaagsehogeschool" target="_blank">
+                <i class="bi bi-instagram social-icon"></i>
+            </a>
+            <a href="https://nl.wikipedia.org/wiki/De_Haagse_Hogeschool" target="_blank">
+                <i class="bi bi-globe social-icon"></i>
+            </a>
+        </div>
+        <p id="school-summary">
+            De Haagse Hogeschool is een onderwijsinstelling die hbo-opleidingen aanbiedt in de regio rond 
+            Den Haag, in de Nederlandse provincie Zuid-Holland. Het hoofdgebouw van De Haagse Hogeschool 
+            staat in de wijk Laakhaven, vlak bij station Hollands Spoor.
+        </p>
+        <h1 class="text-title">Geschiedenis</h1>
+        <p id="text-paragraph"><em>De Haagse Hogeschool</em> werd op 12 januari 1987 opgericht, door de totstandbrenging van een fusie 
+            tussen zes gemeentelijke- en negen bijzondere instellingen voor hoger beroepsonderwijs in de regio. 
+            Toen werden tevens in een “Verordening Haagse Hogeschool” de taken, bevoegdheden en 
+            verantwoordelijkheden van de Bestuurscommissie en het College van Bestuur vastgelegd. 
+            Op 1 september 1987 startte de nieuwe instelling. Per 1 januari 1995 is 
+            De Haagse Hogeschool verzelfstandigd.
+        </p>
+        <div id="image-container">
+            <div id="carousel-slider" class="carousel-inner">
+                <div class="carousel-item">
+                    <img class="d-block w-100 showcase-image" src="showcase-image-1.jpg" alt="first image of students">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 showcase-image" src="showcase-image-2.jpg" alt="second image of students">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 showcase-image" src="showcase-image-3.jpg" alt="third image of students">
+                </div>
+            </div>
+        </div>
+        <h2 class="text-title-small">Uitbreidingen</h2>
+        <div id="location-container">
+            <div class="location">Zoetermeer</div>
+            <div class="location">Den Haag</div>
+            <div class="location">Delft</div>
+            <div class="location">Sportcampus Zuiderpark</div>
+        </div>
+        <ul id="information-list">
+            <li class="information-item">Sinds 2003 is de Technische Hogeschool Rijswijk ook onderdeel van 
+                De Haagse Hogeschool. Vanaf 2006 ging TH Rijswijk verder onder de naam De Haagse Hogeschool 
+                Delft en verhuisde in september 2009 naar de TU-campus in Delft.</li>
+            <li class="information-item">De Haagse Hogeschool startte in 2003 met de Academie voor IT & Design 
+                (tegenwoordig Faculteit IT & Design) in Zoetermeer, in nauwe samenwerking met het 
+                Zoetermeerse bedrijfsleven. Inmiddels is deze opleiding HBO-ICT gevestigd op het 
+                Dutch Innovation Park in Zoetermeer.</li>
+            <li class="information-item">In september 2017 hebben de HALO 
+                (opleiding leraar lichamelijke opvoeding), Sportkunde en International Sport Management 
+                hun intrek genomen in de Sportcampus Zuiderpark. In het nieuwe sportcomplex zullen 
+                uiteindelijk circa 1.500 studenten les gaan krijgen.</li>
+        </ul>
+        <h1 class="text-title">Studies</h1>
+        <div class="container-md">
+            <div class="row">
+                <div class="col-md">
+                    <div id="study-container">
+                        <table id="study-table">
+                            <th>Studie</th>
+                            <th>Beschrijving</th>
+                            <th>Email voor vragen</th>
+                            <tr>
+                                <td class="column-one">HBO-ICT</td>
+                                <td class="column-two">176</td>
+                                <td class="column-three">
+                                    <a href="mailto:helphboict@hhs.nl">
+                                        helphboict@hhs.nl
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column-one">Finance & Control</td>
+                                <td class="column-two">241</td>
+                                <td class="column-three">
+                                    <a href="mailto:helpfinancecontrol@hhs.nl">
+                                        helpfinancecontrol@hhs.nl
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <form id="study-form">
+                        <label class="header-text" for="study-name">Naam</label>
+                        <input id="study-input-name" type="text" name="study-name" placeholder="Voer de naam in">
+                        <label id="footer-text" for="study-name">De officiële naam van de studie</label></br>
+                        <label class="header-text" for="study-amount-student">Aantal studenten</label>
+                        <input id="study-input-student" type="number" name="study-amount-student" placeholder="Aantal">
+                        <label class="header-text" for="study-contact-email">Email voor hulp</label>
+                        <input id="study-input-contact" type="email" name="study-contact-email" placeholder="Voer email in">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="button-container">
+            <button onclick="checkData()" id="submit-button">Submit</button>
+        </div>
+        <button onclick="alert('www.dehaagsehogeschool.nl/studie-kiezen/alles-over-aanmelden-en-inschrijven/aanmelden-hoe-doe-je-dat')" 
+        id="registration-button">Meld mij aan!</button>
+        <script src="script.js"></script>
+    </body>
+</html>

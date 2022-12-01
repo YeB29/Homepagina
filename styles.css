@@ -1,0 +1,207 @@
+* {
+    padding: 0px;
+    margin: auto;
+}
+
+body {
+    width: 100%;
+}
+
+#social-media {
+    width: 70%;
+    display: flex;
+}
+
+.social-icon {
+    font-size: 40px;
+}
+
+.navbar {
+    width: 70%;
+    height: 60px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.container-nav {
+    width: 100%;
+    height: 100%;
+}
+
+.left-side-text {
+    height: 100%;
+    float: left;
+    color: #ffffff;
+    user-select: none;
+    padding: 15px;
+}
+
+.left-side-text:hover {
+    background-color: #606060;
+}
+
+.right-side-text {
+    position: relative;
+    height: 100%;
+    float: right;
+    padding: 15px;
+    margin-right: 0px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.right-side-text:hover {
+    background-color: #606060;
+    color: #000000 !important;
+    cursor: pointer;
+}
+
+.right-side-text::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #909090;
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform 1s ease;
+}
+
+.right-side-text:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar .nav-item .dropdown-menu {
+    display: none;
+}
+
+.navbar .left-side-text:hover .dropdown-menu {
+    display: block;
+    margin-left: -15px;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+#school-summary {
+    width: 70%;
+    margin-top: 10px;
+}
+
+.text-title {
+    width: 70%;
+    margin-top: 10px;
+}
+
+#text-paragraph {
+    width: 70%;
+    margin-top: 10px;
+}
+
+#image-container {
+    width: 70%;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.showcase-image {
+    object-fit: contain;
+    max-width: 30%;
+}
+
+.text-title-small {
+    width: 70%;
+    margin-top: 50px;
+}
+
+#location-container {
+    width: 70%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#location {
+    padding: 0px;
+    margin: 0px;
+}
+
+#information-list {
+    width: 70%;
+    margin-top: 10px;
+}
+
+#information-list .information-item {
+    margin-left: 20px;
+}
+
+#study-container {
+    width: 70%;
+    margin-top: 10px;
+}
+
+#study-container #study-table {
+    width: 50%;
+    margin: 0px;
+}
+
+#study-container #study-table th {
+    text-align: center;
+}
+
+#study-container #study-table tr .column-one {
+    background-color: rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+
+#study-container #study-table tr .column-two {
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+}
+
+#study-container #study-table tr .column-three {
+    background-color: rgba(0, 255, 0, 0.5);
+    text-align: center;
+}
+
+#study-form {
+    width: 70%;
+    margin-top: 10px;
+}
+
+#study-form #study-input-name, #study-form #study-input-student, #study-form #study-input-contact {
+    width: 100%;
+    outline: none;
+}
+
+#study-form #study-input-name:focus {
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+}
+
+#study-form #study-input-student:focus {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);
+}
+
+#study-form #study-input-contact:focus {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+}
+
+#study-form #header-text {
+    font-size: 20px;
+}
+
+#study-form #footer-text {
+    font-size: 14px;
+}
+
+#button-container {
+    width: 70%;
+}
+
+#registration-button {
+    position: fixed;
+    margin: 20px;
+    bottom: 0;
+    right: 0;
+}
